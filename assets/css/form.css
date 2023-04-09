@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container__main{
+  justify-content: center;
+  align-items: center;
+height: 62vh;
+}
+
+.section-head{
+  display: block;
+  width: 80%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.container-form{
+  display: flex;
+  row-gap: 5px;
+  width: 80%;
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+  border:1px solid #55545467;
+  border-radius: 5px;
+
+}
+
+.container-form__img{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border:1px solid #55545467;
+  border-radius: 5px;
+}
+
+
+.form__img{
+  width: 60%;
+  
+}
+
+.main-section__form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+  border: 1px solid #55545467;
+  border-radius: 5px;
+  padding: 10px;
+  justify-content: space-around;
+  
+}
+
+.main-section__form input[type='email'],
+.main-section__form input[type='text']{
+  background: transparent;
+  height: 2rem;
+  border: none;
+  border-bottom: 1px solid #55545467;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.main-section__form textarea{
+  background: transparent;
+  resize: none;
+  height: 6rem;
+  border: none;
+  border-bottom: 1px solid #55545467;
+  font-family: 'Open Sans', sans-serif;
+}
+.main-section__form input[type='email']:focus,
+.main-section__form input[type='text']:focus, 
+.main-section__form textarea:focus{
+  background: linear-gradient( to bottom, transparent, #55545438);
+  outline: none;
+}
+
+
+.main-section__form input[type='submit']{
+  background: transparent;
+  height: 2.5rem;
+  border: 1px solid #55545467;
+  border-radius: 5px;
+}
+.main-section__form input[type='submit']:hover{
+  background: #55545444;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+@media  screen and (max-width: 969px) {
+  .container__main{
+    height: 100%;
+  }
+  .container-form{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-form__img{
+    display: flex;
+    justify-content: center;
+  }
+  
+}

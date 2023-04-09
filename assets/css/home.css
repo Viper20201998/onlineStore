@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: min-content 1fr min-content;
+	grid-gap: 10px;
+}
+
+.container__header {
+	grid-column: 1/4;
+	grid-row: 1/ 2;
+}
+
+.container__main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	grid-column: 1/4;
+	grid-row: 2/ 3;
+	margin-top: 5px;
+}
+
+
+.footer {
+	grid-column: 1/ 4;
+	grid-row: 3/4;
+}
+
+
